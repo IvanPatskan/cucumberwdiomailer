@@ -1,0 +1,143 @@
+
+Execution of 1 spec files started at 2020-11-23T07:09:13.590Z
+
+2020-11-23T07:09:13.605Z INFO @wdio/cli:launcher: Run onPrepare hook
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2020-11-23T07:09:13.611Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-11-23T07:09:13.611Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.conf.js
+[0-0] 2020-11-23T07:09:13.795Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2020-11-23T07:09:13.805Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+[0-0] RUNNING in chrome - /src/features/like.feature
+[0-0] 2020-11-23T07:09:14.009Z INFO webdriverio: Initiate new session using the webdriver protocol
+[0-0] 2020-11-23T07:09:14.009Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2020-11-23T07:09:14.009Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+[0-0] 2020-11-23T07:09:14.272Z INFO webdriver: COMMAND navigateTo("https://www.ceek.com//login/")
+[0-0] 2020-11-23T07:09:14.272Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/url
+[0-0] 2020-11-23T07:09:14.272Z INFO webdriver: DATA { url: 'https://www.ceek.com//login/' }
+[0-0] 2020-11-23T07:09:17.190Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="si-email"]")
+[0-0] 2020-11-23T07:09:17.190Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:17.190Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="si-email"]' }
+[0-0] 2020-11-23T07:09:17.199Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '94db622f-58d3-4f56-9e2e-214562ca112b'
+}
+[0-0] 2020-11-23T07:09:17.202Z INFO webdriver: COMMAND elementClear("94db622f-58d3-4f56-9e2e-214562ca112b")
+[0-0] 2020-11-23T07:09:17.202Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/94db622f-58d3-4f56-9e2e-214562ca112b/clear
+[0-0] 2020-11-23T07:09:17.223Z INFO webdriver: COMMAND elementSendKeys("94db622f-58d3-4f56-9e2e-214562ca112b", "mewiwev62879@jqjlb.com")
+[0-0] 2020-11-23T07:09:17.224Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/94db622f-58d3-4f56-9e2e-214562ca112b/value
+[0-0] 2020-11-23T07:09:17.224Z INFO webdriver: DATA { text: 'mewiwev62879@jqjlb.com' }
+[0-0] 2020-11-23T07:09:19.269Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="si-password"]")
+[0-0] 2020-11-23T07:09:19.269Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:19.269Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="si-password"]' }
+[0-0] 2020-11-23T07:09:19.284Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'c5edbf9a-6ecf-4176-bc0b-96eeaadfa1ff'
+}
+[0-0] 2020-11-23T07:09:19.286Z INFO webdriver: COMMAND elementClear("c5edbf9a-6ecf-4176-bc0b-96eeaadfa1ff")
+[0-0] 2020-11-23T07:09:19.286Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/c5edbf9a-6ecf-4176-bc0b-96eeaadfa1ff/clear
+[0-0] 2020-11-23T07:09:19.306Z INFO webdriver: COMMAND elementSendKeys("c5edbf9a-6ecf-4176-bc0b-96eeaadfa1ff", "qwerty123")
+[0-0] 2020-11-23T07:09:19.307Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/c5edbf9a-6ecf-4176-bc0b-96eeaadfa1ff/value
+[0-0] 2020-11-23T07:09:19.307Z INFO webdriver: DATA { text: 'qwerty123' }
+[0-0] 2020-11-23T07:09:21.337Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="login"]")
+[0-0] 2020-11-23T07:09:21.337Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:21.338Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="login"]' }
+[0-0] 2020-11-23T07:09:21.352Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '7057ed1d-6f44-4712-8187-f30313233d39'
+}
+[0-0] 2020-11-23T07:09:21.354Z INFO webdriver: COMMAND elementClick("7057ed1d-6f44-4712-8187-f30313233d39")
+[0-0] 2020-11-23T07:09:21.354Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/7057ed1d-6f44-4712-8187-f30313233d39/click
+[0-0] 2020-11-23T07:09:25.229Z INFO webdriver: COMMAND navigateTo("https://www.ceek.com/discover/")
+[0-0] 2020-11-23T07:09:25.230Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/url
+[0-0] 2020-11-23T07:09:25.230Z INFO webdriver: DATA { url: 'https://www.ceek.com/discover/' }
+[0-0] 2020-11-23T07:09:28.547Z INFO webdriver: COMMAND findElement("xpath", "/html/body/div/main/div[2]/div[2]/section/article[1]/div[1]")
+[0-0] 2020-11-23T07:09:28.547Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:28.547Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '/html/body/div/main/div[2]/div[2]/section/article[1]/div[1]'
+}
+[0-0] 2020-11-23T07:09:28.560Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0d300e73-8f58-4c15-ad98-0b9d29ca3109'
+}
+[0-0] 2020-11-23T07:09:28.561Z INFO webdriver: COMMAND elementClick("0d300e73-8f58-4c15-ad98-0b9d29ca3109")
+[0-0] 2020-11-23T07:09:28.561Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/0d300e73-8f58-4c15-ad98-0b9d29ca3109/click
+[0-0] 2020-11-23T07:09:31.072Z INFO webdriver: COMMAND navigateTo("https://www.ceek.com/my-list/")
+[0-0] 2020-11-23T07:09:31.072Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/url
+[0-0] 2020-11-23T07:09:31.072Z INFO webdriver: DATA { url: 'https://www.ceek.com/my-list/' }
+[0-0] 2020-11-23T07:09:33.928Z INFO webdriver: COMMAND findElement("xpath", "/html/body/div/main/div/div/div[4]/section/article[1]/div[1]")
+[0-0] 2020-11-23T07:09:33.928Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:33.928Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '/html/body/div/main/div/div/div[4]/section/article[1]/div[1]'
+}
+[0-0] 2020-11-23T07:09:33.936Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'd7961508-ac99-414b-b380-61a7a89c4b17'
+}
+[0-0] 2020-11-23T07:09:33.937Z INFO webdriver: COMMAND getElementAttribute("d7961508-ac99-414b-b380-61a7a89c4b17", "data-info")
+[0-0] 2020-11-23T07:09:33.937Z INFO webdriver: [GET] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/d7961508-ac99-414b-b380-61a7a89c4b17/attribute/data-info
+[0-0] 2020-11-23T07:09:33.943Z INFO webdriver: COMMAND findElement("xpath", "/html/body/div/main/div/div/div[4]/section/article[1]/div[1]")
+[0-0] 2020-11-23T07:09:33.943Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element
+[0-0] 2020-11-23T07:09:33.943Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '/html/body/div/main/div/div/div[4]/section/article[1]/div[1]'
+}
+[0-0] 2020-11-23T07:09:33.948Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'd7961508-ac99-414b-b380-61a7a89c4b17'
+}
+[0-0] 2020-11-23T07:09:33.949Z INFO webdriver: COMMAND elementClick("d7961508-ac99-414b-b380-61a7a89c4b17")
+[0-0] 2020-11-23T07:09:33.949Z INFO webdriver: [POST] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0/element/d7961508-ac99-414b-b380-61a7a89c4b17/click
+[0-0] Error in "Like on test.lumen.ceek.com: Like: Then The video must be liked"
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "366"
+Received: null
+    at World.<anonymous> (/home/tm/Documents/wdiocucumberautotest/webdriverio-test/src/steps/like.js:31:19)
+[0-0] 2020-11-23T07:09:34.322Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2020-11-23T07:09:34.322Z INFO webdriver: [DELETE] http://localhost:9515/session/c10d34d76f6e4332da214b78542a16f0
+[0-0] FAILED in chrome - /src/features/like.feature
+2020-11-23T07:09:34.481Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 87.0.4280.66 linux #0-0] Spec: /home/tm/Documents/wdiocucumberautotest/webdriverio-test/src/features/like.feature
+[chrome 87.0.4280.66 linux #0-0] Running: chrome (v87.0.4280.66) on linux
+[chrome 87.0.4280.66 linux #0-0] Session ID: c10d34d76f6e4332da214b78542a16f0
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0] Like on test.lumen.ceek.com
+[chrome 87.0.4280.66 linux #0-0] Me as a user
+[chrome 87.0.4280.66 linux #0-0] want to like a video
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0]     Like
+[chrome 87.0.4280.66 linux #0-0]     Me as a user
+[chrome 87.0.4280.66 linux #0-0]     want to like a video
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0]        ✓ Given I am on the login page do login
+[chrome 87.0.4280.66 linux #0-0]        ✓ When I log in and go to discover and click on like button
+[chrome 87.0.4280.66 linux #0-0]        ✖ Then The video must be liked
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0] 2 passing (20.1s)
+[chrome 87.0.4280.66 linux #0-0] 1 failing
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0] 1) Like Then The video must be liked
+[chrome 87.0.4280.66 linux #0-0] expect(received).toEqual(expected) // deep equality
+
+Expected: "366"
+Received: null
+[chrome 87.0.4280.66 linux #0-0] Error: expect(received).toEqual(expected) // deep equality
+[chrome 87.0.4280.66 linux #0-0]
+[chrome 87.0.4280.66 linux #0-0] Expected: "366"
+[chrome 87.0.4280.66 linux #0-0] Received: null
+[chrome 87.0.4280.66 linux #0-0]     at World.<anonymous> (/home/tm/Documents/wdiocucumberautotest/webdriverio-test/src/steps/like.js:31:19)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:20 
+
+2020-11-23T07:09:34.481Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-11-23T07:09:34.732Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2020-11-23T07:09:34.732Z INFO @wdio/local-runner: shutting down

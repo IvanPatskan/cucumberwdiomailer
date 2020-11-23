@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Like_on_test_lumen_ceek_com" timestamp="2020-11-23T09:09:14" time="20.055" tests="1" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Like on test.lumen.ceek.com"/>
+      <property name="capabilities" value="chrome.87_0_4280_66.linux"/>
+      <property name="featureFile" value="./src/features/like.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.87_0_4280_66.linux.Like_on_test_lumen_ceek_com" name="Like_on_test_lumen_ceek_com.Like" time="20.053">
+      <error message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: &quot;366&quot;&#xA;Received: null"/>
+      <system-out>
+        <![CDATA[
+✅ Given I am on the login page do login✅ When I log in and go to discover and click on like button❗ Then The video must be liked
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "366"
+Received: null
+    at World.<anonymous> (/home/tm/Documents/wdiocucumberautotest/webdriverio-test/src/steps/like.js:31:19)
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,7 @@
+mkdir `date +%d-%m-%Y`; 
+cd `date +%d-%m-%Y`; 
+touch `date +%d-%m-%Y`.txt;
+cd ..;
+npx wdio run wdio.conf.js > `date +%d-%m-%Y`/`date +%d-%m-%Y`.txt;
+node mail.js;
+
